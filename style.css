@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--main-background); */
+  background-color: var(--main-background);
 }
 
 .card-container {
@@ -50,7 +50,7 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 2.5em;
+  padding: 3em;
   justify-content: space-between;
 }
 
@@ -106,14 +106,25 @@ body {
 
 /* right side container */
 .right-child-container {
+  /* border: 4px solid red; */
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.right-child-container figure {
+  width: 100%;
+  height: 100%;
+}
+
+/* fit image inside a div */
 .right-child-container img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
