@@ -1,0 +1,65 @@
+/* Use Required Google Font with Weights */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* Universal Selector & explicitly set box-sizing type */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  everything applicable to or can be used for all elements */
+/* color palette */
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --card-bg-color: hsl(0, 0%, 100%);
+  --card-title-color: hsl(218, 44%, 22%);
+  --card-content-color: hsl(220, 15%, 55%);
+}
+
+body {
+  height: 100vh;
+  /* center the main container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  border: 1px solid red;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  /* allow flex item to take whole height */
+  align-items: stretch;
+}
+
+/* left side container */
+.left-child-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  justify-content: space-between;
+}
+
+.left-child-container section:nth-child(3) {
+  /* debugging purpose */
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* right side container */
+.right-child-container {
+  width: 50%;
+}
+
+.right-child-container img {
+  width: 100%;
+}
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
