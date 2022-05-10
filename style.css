@@ -14,7 +14,13 @@
   --bg-color: hsl(212, 45%, 89%);
   --card-bg-color: hsl(0, 0%, 100%);
   --card-title-color: hsl(218, 44%, 22%);
-  --card-content-color: hsl(220, 15%, 55%);
+  --card-background-color: hsl(244, 38%, 16%);
+  --main-heading-color: hsl(0, 0%, 100%);
+  --stats-color: hsl(0, 0%, 100%);
+  --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+  --main-header-accent: hsl(277, 64%, 61%);
+  --main-background: hsl(233, 47%, 7%);
 }
 
 body {
@@ -23,17 +29,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: var(--main-background); */
 }
 
 .card-container {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 75%;
   height: auto;
   margin: auto;
   justify-content: center;
   /* allow flex item to take whole height */
   align-items: stretch;
+  background-color: var(--card-background-color);
+  border-radius: 0.5em;
 }
 
 /* left side container */
@@ -41,21 +50,66 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 2.5em;
   justify-content: space-between;
 }
 
-.left-child-container section:nth-child(3) {
+.left-child-container > section:nth-child(1) {
+  width: 85%;
+}
+
+.left-child-container section h1 {
+  font-size: 2.5em;
+  color: var(--main-heading-color);
+}
+
+.left-child-container section h1 span {
+  color: var(--main-header-accent);
+}
+
+.left-child-container > section:nth-child(2) p {
+  /* debugging purpose */
+  /* color: red; */
+  font-size: 1.1em;
+  width: 85%;
+  line-height: 1.5em;
+  color: var(--main-paragraph-color);
+}
+
+.left-child-container > section:nth-child(3) {
   /* debugging purpose */
   /* border: 1px solid green; */
+  width: 85%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 2em;
+}
+
+.single-stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single-stats-container > h2 {
+  margin-bottom: 0.8em;
+  color: var(--stats-color);
+  font-size: 1.25em;
+}
+
+.single-stats-container p {
+  text-transform: uppercase;
+  color: var(--stat-heading-color);
+  font-size: 0.75em;
 }
 
 /* right side container */
 .right-child-container {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-child-container img {
