@@ -1,3 +1,6 @@
+/* Write GOOD comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this code; need NOT have to get back to you */
+
 /* Use Required Google Font with Weights */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
@@ -128,3 +131,91 @@ body {
 }
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
+
+/* Responsive web design */
+@media (max-width: 29.6875em) {
+  .card-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  /* top container with image */
+  .right-child-container {
+    width: 100%;
+    height: 250px;
+    /* border: 2px solid red; */
+  }
+
+  .right-child-container img {
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0;
+  }
+
+  /* bottom container with text */
+  .left-child-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+  }
+
+  .left-child-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* debugging purpose only */
+    /* border: 2px solid green; */
+  }
+
+  .left-child-container > section:nth-child(1) {
+    margin-bottom: 1em;
+  }
+
+  .left-child-container section h1 {
+    font-size: 1.35em;
+    color: var(--main-heading-color);
+    text-align: center;
+  }
+
+  .left-child-container > section:nth-child(2) p {
+    font-size: 0.85em;
+    text-align: center;
+  }
+
+  .left-child-container > section:nth-child(3) {
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    /* border: 3px solid gold; */
+  }
+
+  .single-stats-container h2 {
+    margin: 0.2em;
+    font-size: 1.15em;
+    /* border: 3px solid red; */
+  }
+
+  .single-stats-container p {
+    font-size: 0.65em;
+  }
+}
