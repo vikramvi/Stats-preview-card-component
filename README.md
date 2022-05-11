@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL ](https://github.com/vikramvi/Stats-preview-card-component)
-- [Live Site RUL ](https://vikramvi.github.io/Stats-preview-card-component/)
+- [Live Site URL ](https://vikramvi.github.io/Stats-preview-card-component/)
 
 ## My process
 
